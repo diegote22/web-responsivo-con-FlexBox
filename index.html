@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/282fd0a33c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Web Responsivo con FlexBox</title>
 </head>
 <body>
-    
+    <header>
+        <h2><a href="#">Saboniss <sup><i class="fa-solid fa-registered"></i></sup></a></h2>
+        <nav>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#Servicios">Servicios</a</li>
+            <li><a href="#Contacto">Contacto</a></li>
+        </nav>
+    </header>
+
+    <section class="banner-area">
+        <div class="banner-img">
+            <div class="banner-text">
+                <h1>Creamos Soluciones</h1>
+                <h3>Bienvenidos</h3>
+                <a href="#" class="banner-btn">Contactanos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-area" id="about">
+        <h3 class="section-title">Nosotros</h3>
+        <ul class="about-content">
+            <li class="about-left"></li>
+            <li class="about-right">
+                <h2>La empresa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eos. Odit, eius cupiditate sint similique impedit, earum officiis fugit, veritatis fugiat in asperiores incidunt cumque quas illo aperiam quis exercitationem dicta doloribus nam! Aliquam commodi, eius ut, a aperiam architecto non necessitatibus iure consectetur alias iste facere consequatur voluptatum impedit.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="services-are" id="services">
+        <h3 class="section-title">Servicios</h3>
+        <ul class="services-content">
+            <li>
+                <i class="fa-solid fa-bookmark"></i>
+                <h4>Diseños</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, beatae.</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-book"></i>
+                <h4>Marca</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, ullam?</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-star"></i>
+                <h4>Seo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ex!</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact-area" id="contact">
+        <h3 class="section-title">Contacto</h3>
+        <ul class="contact-content">
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>123, Thomas Tómas <br>San Martín, Mendoza (Argentina)</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>+54 9 123456 <br>+54 9 7891011</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <p>contacto@saboniss.com <br>reclutador@saboniss.com</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados a @WebDev.innovando</p>
+    </footer>
 </body>
 </html>

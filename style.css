@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Itim", cursive;
+}
+
+ul,nav{
+    list-style: none;
+}
+
+.fa-registered{
+    color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+@media (max-width: 1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+@media (max-width: 600px){
+    section{
+        padding: 125px 30px;
+    }
+}
+
+section p{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
+}
+
+header h2{
+    text-transform: uppercase;
+}
+
+header h2 a{
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header h2 a:hover {
+    color: blueviolet;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Agrega una ligera sombra */
+}
+
+header nav{
+    display: flex;
+}
+
+header nav li{
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+header nav li a:hover {
+    color: blueviolet; /* Cambia el color al pasar el mouse */
+}
+
+header nav li a:hover {
+    border-bottom: 2px solid blueviolet;
+    padding-bottom: 3px; /* Ajusta el espacio para que la línea no quede pegada al texto */
+}
+
+header nav li:first-child{
+    margin-left: 0;
+}
+header nav li:last-child{
+    margin-right: 0;
+}
+
+@media (max-width: 1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header nav li{
+        margin: 0 7px;
+    }
+}
+
+.banner-area {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex; /* Añadir flexbox al contenedor padre */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.banner-area .banner-img {
+    background-image: url(img/mendoza_ciudad.webp);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-area .banner-img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+    z-index: 2; 
+}
+
+.banner-area .banner-text {
+    z-index: 3; 
+    position: relative; 
+}
+
+.banner-area h1{
+    margin-bottom: 15px;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.banner-area h3{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.banner-area a.banner-btn{
+    padding: 15px 30px;
+    background: blueviolet;
+    color: #000;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner-area a.banner-btn:hover {
+    background-color: #000; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+}
+
+@media (max-width: 800px){
+    .banner-area{
+        min-height: 600px;
+    }
+    .banner-area h1{
+        font-size: 32px;
+    }
+    .banner-area h3{
+        font-size: 20px;
+    }
+    .banner-area a.banner-btn{
+        padding: 15px 40px;
+    }
+}
+
+ul.about-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content li{
+    padding: 20px;
+    height: 290px;
+    border-radius: 3px;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-left{
+    flex-basis: 40%;
+    background-image: url(img/arte_1.jpg);
+}
+
+.abaout-right{
+    flex-basis: 60%;
+}
+
+.about-area p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 1000px){
+    .about-left,
+    .abaout-right{
+        flex-basis: 100%;
+    }
+    .about-content li{
+        padding: 8px;
+    }
+}
+
+#services{
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/arte_2.jpg);
+    background-attachment: fixed;
+    color: #fff;
+}
+
+ul.services-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-content li{
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.services-content li i{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.services-content li:hover i {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del icono */
+    color: #ffcc00; /* Cambia el color del icono */
+}
+
+.services-content li h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.services-content li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+    .services-content li{
+        flex-basis: 100%;
+        margin-bottom: 35px;
+    }
+    .services-content li:last-child{
+        margin-bottom: 0;
+    }
+    .services-content li p{
+        padding: 0;
+    }
+}
+
+ul.contact-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-content li{
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.contact-content li i{
+    font-size: 50px;
+    color: blueviolet;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-content li:hover i {
+    transform: translateY(-5px); /* Desplaza el icono ligeramente hacia arriba */
+    color: #00bfff; /* Cambia el color del icono */
+}
+
+@media (max-width: 1000px){
+    .contact-content li{
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+    .contact-content li:last-child{
+        margin-bottom: 0;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    padding: 60px 0;
+}
